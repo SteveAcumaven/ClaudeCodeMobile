@@ -1,0 +1,148 @@
+export const questions = [
+  {
+    id: 1,
+    prompt: "Morning person or night owl?",
+    optionA: "Early bird 🌅",
+    optionB: "Night owl 🦉",
+    category: "lifestyle",
+  },
+  {
+    id: 2,
+    prompt: "How do you eat pizza?",
+    optionA: "Fold it 🍕",
+    optionB: "Knife & fork 🍴",
+    category: "food",
+  },
+  {
+    id: 3,
+    prompt: "Ideal weekend?",
+    optionA: "Adventure out 🏔️",
+    optionB: "Couch & chill 🛋️",
+    category: "lifestyle",
+  },
+  {
+    id: 4,
+    prompt: "The toilet paper goes...",
+    optionA: "Over ✅",
+    optionB: "Under 🙃",
+    category: "hot-take",
+  },
+  {
+    id: 5,
+    prompt: "Pineapple on pizza?",
+    optionA: "Absolutely 🍍",
+    optionB: "Never ever 🚫",
+    category: "food",
+  },
+  {
+    id: 6,
+    prompt: "Pick a superpower",
+    optionA: "Fly ✈️",
+    optionB: "Read minds 🧠",
+    category: "fun",
+  },
+  {
+    id: 7,
+    prompt: "How do you handle being lost?",
+    optionA: "Check the map 🗺️",
+    optionB: "Wing it 🤷",
+    category: "personality",
+  },
+  {
+    id: 8,
+    prompt: "Texts or calls?",
+    optionA: "Text me 💬",
+    optionB: "Call me 📞",
+    category: "personality",
+  },
+  {
+    id: 9,
+    prompt: "In a movie, you're the...",
+    optionA: "Hero 🦸",
+    optionB: "Comic relief 🤡",
+    category: "fun",
+  },
+  {
+    id: 10,
+    prompt: "The thermostat stays at...",
+    optionA: "Warm & toasty 🔥",
+    optionB: "Cool & crisp ❄️",
+    category: "hot-take",
+  },
+  {
+    id: 11,
+    prompt: "Road trip music?",
+    optionA: "Sing-along hits 🎤",
+    optionB: "Chill vibes 🎧",
+    category: "lifestyle",
+  },
+  {
+    id: 12,
+    prompt: "Dogs or cats?",
+    optionA: "Dogs 🐕",
+    optionB: "Cats 🐈",
+    category: "hot-take",
+  },
+  {
+    id: 13,
+    prompt: "It's 10pm — you're...",
+    optionA: "Wide awake 👀",
+    optionB: "Already asleep 😴",
+    category: "lifestyle",
+  },
+  {
+    id: 14,
+    prompt: "Leftovers?",
+    optionA: "Save them all 📦",
+    optionB: "Trash 'em 🗑️",
+    category: "food",
+  },
+  {
+    id: 15,
+    prompt: "Assemble furniture with instructions?",
+    optionA: "Read every step 📖",
+    optionB: "Figure it out 🔧",
+    category: "personality",
+  },
+  {
+    id: 16,
+    prompt: "Vacation style?",
+    optionA: "Plan everything 📋",
+    optionB: "Go with the flow 🌊",
+    category: "lifestyle",
+  },
+  {
+    id: 17,
+    prompt: "Movie snack?",
+    optionA: "Popcorn 🍿",
+    optionB: "Candy 🍬",
+    category: "food",
+  },
+  {
+    id: 18,
+    prompt: "Shower time?",
+    optionA: "Morning 🌞",
+    optionB: "Night 🌙",
+    category: "hot-take",
+  },
+  {
+    id: 19,
+    prompt: "You get a free hour — you...",
+    optionA: "Nap 💤",
+    optionB: "Scroll my phone 📱",
+    category: "fun",
+  },
+  {
+    id: 20,
+    prompt: "Family dinner debate champion?",
+    optionA: "That's me 🏆",
+    optionB: "I keep the peace ☮️",
+    category: "personality",
+  },
+];
+
+// Pick N random questions
+export function pickQuestions(n = 10) {
+  const shuffled = [...questions].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, n);
+}
